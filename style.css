@@ -113,6 +113,41 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.video-featured {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.video-featured .video-item {
+  aspect-ratio: 4 / 3;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.video-item {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.video-item:hover {
+  opacity: 1;
+}
+
+.video-placeholder {
+  background-color: #111;
+  border: 1px solid #333;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
